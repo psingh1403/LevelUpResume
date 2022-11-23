@@ -1,0 +1,295 @@
+/* -------------------------------------colour codes------------------------------------------ */
+/* dark color: #17252A */
+/* light color: #52e3dc  rgb(82, 227, 220) */
+/* Button color: #2B7A78 */
+/* -------------------------------------colour codes------------------------------------------ */
+
+/* -------------------------------------Global Style------------------------------------------ */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Helvatica" san-serif;
+    font-size: 16px;
+}
+
+/* p {
+    letter-spacing: .9px;
+    line-height: 26px;
+    font-family: 'Merriweather', sans-serif;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rancho', cursive;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input[type=email],
+input[type=password],
+input[type=text] {
+    width: 100%;
+    border-left: 12px solid rgb(82, 227, 220);
+}
+
+:root {
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+/* -------------------------------------Global Style------------------------------------------ */
+
+
+/* -------------------------------------header/NavBar Style------------------------------------------ */
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.back-color {
+    background-color: #17252A !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+header .navbar .navbar-nav a {
+    color: #fff !important;
+    margin-left: 20px;
+}
+
+header .navbar .navbar-nav .active1 a {
+    /* background-color: pink !important; */
+    color: #3AAFA9 !important;
+    font-weight: bolder;
+}
+
+.navbar-light .navbar-toggler-icon {
+    /* background-image: url("data:image/svg+xml;.."); */
+    color: #fff !important;
+}
+
+.custom-toggler .navbar-toggler {
+    border-color: lightgreen;
+    /* padding: -20px; */
+    /* border:0px solid transparent; */
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 35 35' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(82, 227, 220, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* 
+nav .container {
+    border-bottom: 1px solid rgba(107, 106, 106, 0.6);
+    padding-bottom: 10px;
+} */
+/* 
+.shrink .container {
+    border: none !important;
+} */
+/* 
+ul.navbar-nav li a.nav-link {
+    color: #ffffff !important;
+} */
+/* 
+ul.navbar-nav li a.nav-link:hover {
+    color: #2d94fc !important;
+} */
+/* 
+ul.navbar-nav li.active a.nav-link {
+    color: #2d94fc !important;
+    transition: all.3s;
+} */
+
+.shrink {
+    /* background: #fff !important; */
+    box-shadow: 1px 2px 4px 0px #00000075 !important;
+}
+
+/* 
+.shrink .navbar-brand {
+    color: #2d94fc !important;
+} */
+/* 
+.shrink ul.navbar-nav li a.nav-link {
+    color: #222222 !important;
+} */
+/* 
+.shrink ul.navbar-nav li a.nav-link:hover,
+.shrink ul.navbar-nav li.active a.nav-link {
+    color: #2d94fc !important;
+} */
+
+/* -------------------------------------header/NavBar Style------------------------------------------ */
+
+/* -------------------------------------Sidebar Style------------------------------------------ */
+.left-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: #17252A;
+    transition: var(--tran-05);
+    /* margin-top: 50px; */
+    z-index: -1;
+}
+
+.left-sidebar.close-sidebar {
+    width: 88px;
+}
+
+/* sidebar profile image */
+.left-sidebar .profile-image-text .profile-image {
+    text-align: center;
+}
+
+.left-sidebar .profile-image-text .profile-image img {
+    width: 143px;
+    height: 143px;
+    margin-top: 93px;
+    border-radius: 50%;
+    border: 6px solid rgb(82, 227, 220);
+    margin-left: 30px;
+    /* justify-items: center; */
+    margin-bottom: 12px;
+    transition: 2s;
+}
+
+.left-sidebar.close-sidebar .profile-image-text .profile-image img {
+    width: 40px;
+    height: 43px;
+    margin-top: 93px;
+    border-radius: 50%;
+    border: 6px solid rgb(82, 227, 220);
+    margin-left: 8px;
+    justify-items: center;
+    margin-bottom: 100px;
+    transition: 0.2ms;
+}
+
+/* .left-sidebar .profile-image-text .profile-text{
+    text-align: center;
+}
+
+.left-sidebar .profile-image-text .profile-text p{
+    color: #fff;
+    font-size: 14px;
+} */
+
+.left-sidebar li {
+    height: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    /* background-color: black; */
+    /* padding-left: 44px; */
+}
+
+.left-sidebar li a i {
+    margin-right: 12px;
+    color: rgb(82, 227, 220);
+}
+
+.left-sidebar .text {
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.left-sidebar .text,
+.left-sidebar .icons {
+    color: var(--text-color);
+    transition: 2s;
+}
+
+.left-sidebar.close-sidebar .text {
+    opacity: 0;
+    transition: 0.2ms;
+}
+
+.left-sidebar .bottom-content {
+    margin-top: 32px;
+    padding-left: 15px;
+}
+
+.left-sidebar .toggle {
+    position: absolute;
+    top: 122px;
+    right: -32px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 32px;
+    width: 30px;
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: var(--tran-05);
+    z-index: 1;
+}
+
+.left-sidebar.close-sidebar .toggle {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+/* -------------------------------------Sidebar Style------------------------------------------ */
+
+/* -------------------------------------Personal details Style------------------------------------------ */
+.main-containt {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 295px;
+    height: 100vh;
+    /* width: calc(100% - 250px); */
+    width: 78%;
+    transition: var(--tran-05);
+    z-index: -1;
+    /* margin-bottom: 120px; */
+}
+
+.main-containt h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 0px;
+}
+
+.left-sidebar.close-sidebar~.main-containt {
+    margin-top: 150px;
+    margin-left: 112px;
+    height: 100vh;
+    width: 91%;
+    /* width: calc(100% - 78px); */
+}
